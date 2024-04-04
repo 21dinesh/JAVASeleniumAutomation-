@@ -3,11 +3,8 @@ package Assignment;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import net.bytebuddy.asm.Advice.Enter;
-import xpath.xpath;
 
 public class AirVistara {
 
@@ -19,7 +16,7 @@ public class AirVistara {
 		//flight search form
 		driver.findElement(By.xpath("//input[@name='flightSearchFrom']")).sendKeys("pune",Keys.ENTER);
 		
-		//driver.findElement(By.xpath("//p[@id='ui-id-54']")).click();
+		driver.findElement(By.xpath("//p[@id='ui-id-54']")).click();
 		
 		//Flight search destination
 		driver.findElement(By.xpath("//input[@aria-label='Search destination']")).sendKeys("manchester",Keys.ENTER);

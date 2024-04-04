@@ -35,7 +35,7 @@ public static void main(String[] args) throws InterruptedException {
     for(int i=0;i<=3;i++)
     {	
     s.selectByIndex(i);
-    Thread.sleep(2000);
+    Thread.sleep(1000);
     }
     
     //deselect the selected value
